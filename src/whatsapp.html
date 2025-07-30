@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="orderForm">
+  <input type="text" id="productName" placeholder="Product Name" required><br>
+  <input type="number" id="productPrice" placeholder="Product Price" required><br>
+  <input type="text" id="customerName" placeholder="Your Name" required><br>
+  <input type="text" id="location" placeholder="Location" required><br>
+  <button type="submit">Order</button>
+</form>
+
+</body>
+<script>
+  document.getElementById("orderForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // prevent page reload
+
+    const productName = document.getElementById("productName").value;
+    const productPrice = document.getElementById("productPrice").value;
+    const customerName = document.getElementById("customerName").value;
+    const location = document.getElementById("location").value;
+
+    const message = `Product Name: ${productName}%0AProduct Price: ${productPrice}%0ACustomer Name: ${customerName}%0ALocation: ${location}`;
+    
+    // Replace YOUR_NUMBER with your WhatsApp number in international format (no + or leading zeros)
+    const phoneNumber = "+8801878339819"; // for example, 8801765432109
+    
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(whatsappURL, "_blank");
+  });
+</script>
+</html>
