@@ -6,7 +6,7 @@ function Nav() {
     <>
       <nav className="navbar d-block position-sticky z-1 top-0 navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <Link className="navbar-brand active" to="/">YasinAfatat</Link>
+          <Link className="navbar-brand active" to="/">SoleCrave</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -16,15 +16,12 @@ function Nav() {
                 <Link className="nav-link active" aria-current="page" to="/">Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" to="/about">About</Link>
+                <Link className="nav-link active" to="/order">Order</Link>
               </li>
 
 
             </ul>
-            <form className="d-flex" role="search">
-              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-              <button className="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            
           </div>
         </div>
       </nav>
